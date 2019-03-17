@@ -1,0 +1,23 @@
+i{
+    font-size: 100px;
+    color: #c0b283;
+}
+#font{
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
+body{
+    font-family: 'Tahoma';
+    width: 70%;
+}
+.text{
+    background-color: #f39c12;
+    width: 50vw;
+    min-height: 0vmax;
+  }
+  @media(max-width: 768px){
+    input{
+      display: block;
+    }
+  }
+  

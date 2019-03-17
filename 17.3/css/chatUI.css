@@ -1,0 +1,64 @@
+body{
+    font-family: Tahoma;
+    margin-left: 20px;
+}
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f m";
+}
+#friends{
+    display: grid;
+    grid-template-rows: 2fr repeat(4, 1fr);
+    grid-area: f;
+    background-color:purple;
+}
+h3{
+    margin-left: 10px;
+}
+p{
+    margin: 10px;
+    background-color: #9B59B6;
+    height: 5vh;
+}
+#chat{
+    display:grid;
+    grid-area: c;
+    background-color: darkgray;
+    font-family: 'Tahoma';
+}
+.textConLeft{
+    display: grid; 
+    grid-template-columns: 3fr 1fr;   
+    background-color: grey;
+    justify-self: start;
+}
+.textConRight{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-self: end;  
+    background-color: lightgreen; 
+}
+.text{
+    display: grid;
+    font-size: 20px;
+    align-self: center;
+}
+.time{
+    display: grid;
+    font-size: 10px;
+    justify-self: end;   
+    align-self: flex-end;
+}
+#message{
+    display: grid;
+    grid-area: m;
+    grid-template-columns: 3fr 1fr;
+}
+input{
+
+}
