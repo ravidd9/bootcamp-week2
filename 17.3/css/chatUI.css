@@ -1,10 +1,12 @@
 body{
     font-family: Tahoma;
     margin-left: 20px;
+    margin: 0px;
 }
 #container{
     display: grid;
-    height: 100vh;
+    height: 99vh;
+    border: 3px solid black;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 15fr 1fr;
     grid-template-areas: 
@@ -12,47 +14,61 @@ body{
     "f m";
 }
 #friends{
-    display: grid;
-    grid-template-rows: 2fr repeat(4, 1fr);
     grid-area: f;
     background-color:purple;
+    border-right: 3px solid black;
 }
 h3{
     margin-left: 10px;
+    justify-self: center;
 }
 p{
     margin: 10px;
     background-color: #9B59B6;
-    height: 5vh;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    
 }
 #chat{
     display:grid;
     grid-area: c;
+    grid-auto-rows: 40px;
     background-color: darkgray;
     font-family: 'Tahoma';
 }
 .textConLeft{
     display: grid; 
-    grid-template-columns: 3fr 1fr;   
+    height: 30px;
+    grid-template-columns: auto auto;   
     background-color: grey;
     justify-self: start;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .textConRight{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    height: 30px;
+    border-radius: 10px;
+    grid-template-columns: 1fr 0fr;
     justify-self: end;  
     background-color: lightgreen; 
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
 }
 .text{
-    display: grid;
     font-size: 20px;
     align-self: center;
 }
 .time{
-    display: grid;
     font-size: 10px;
-    justify-self: end;   
-    align-self: flex-end;
+    justify-self: start;   
+    margin: 10px;
 }
 #message{
     display: grid;
@@ -60,5 +76,14 @@ p{
     grid-template-columns: 3fr 1fr;
 }
 input{
-
+    font-size: 25px;
+    border-top: 2px solid black;
+}
+#send{
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(46, 109, 46);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    color: white;
 }
