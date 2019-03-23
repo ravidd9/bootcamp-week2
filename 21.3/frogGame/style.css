@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 13fr 2fr;
+}
+#timer{
+    text-align: center;
+    align-self: center;
+    background-color: #27AE60;
+    height: 100%;
+    width: 100%;
+}
+#frogs{
+    background-color: rgb(18, 131, 65);
+}
+#start{
+    align-self: center;
+    justify-self: center;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    padding: 10px;
+}
+i{
+    position: relative;
+}
+
+#buttom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#frogsLeft{
+    
+    text-align: center;
+    background-color: #27AE60;
+}
+#gameName{
+    
+    text-align: center;
+    background-color: rgb(25, 134, 170);
+    font-size: 35px;;
+}
+#lvl{
+    text-align: center;
+    align-self: center;
+    background-color: #27AE60;
+}
