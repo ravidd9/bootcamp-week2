@@ -18,15 +18,18 @@ body{
 }
 #frogs{
     background-color: rgb(18, 131, 65);
+    position: relative;
 }
 #start{
-    align-self: center;
-    justify-self: center;
+    left: 35%;
+    top: 40%;
+    width: 280px;   
     font-size: 50px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: yellow;
     padding: 10px;
+    position: relative;
 }
 i{
     position: relative;
@@ -37,9 +40,10 @@ i{
     grid-template-columns: 1fr 1fr 1fr;
 }
 #frogsLeft{
-    
     text-align: center;
     background-color: #27AE60;
+    /* margin-top: auto; */
+    
 }
 #gameName{
     

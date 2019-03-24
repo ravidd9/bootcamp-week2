@@ -25,10 +25,9 @@ const randomSize = function (frog) {
 const randomLoc = function (frog) {
     let x = Math.floor(Math.random() * 85);
     let y = Math.floor(Math.random() * (70 - 10) + 10);
-    // $(frog).css("left", "85%")
-    // $(frog).css("top", "80%")
     $(frog).css("left", x + "%")
-    $(frog).css("top", x + "%")
+    $(frog).css("top", y + "%")
+    $(frog).css("position", 'absolute')
 }
 const nextLevel = function () {
     lvl++
@@ -41,11 +40,11 @@ const resetLevel = function () {
     lvl = 1
     frogNum = 0
     $("i").remove()
-    $("#start").css("display", "flex")
+    $("#start").css("display", "block")
 }
 
 
-$("#start").on("click", function () {
+const startGame = $("#start").on("click", function () {
     $(this).css("display", "none")
     createFrog()
     $("body").on("click", "i", function () {
